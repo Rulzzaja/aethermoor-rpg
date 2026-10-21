@@ -1,0 +1,17 @@
+:root {
+  --color-gold-light: #F2C14E; --color-crystal-blue: #5FB7E5; --color-forest-green: #2F5D50;
+  --color-shadow-purple: #4B2E6F; --color-danger-red: #D64545; --color-bone-white: #EFE6D2; --color-night-black: #12141C;
+  --color-bar-hp: #C9373F; --color-bar-mana: #3C7BD9; --color-bar-stamina: #4FA66A; --color-bar-xp: #F2C14E;
+  --color-rarity-common: #D9D9D9; --color-rarity-rare: #4DA3FF; --color-rarity-epic: #B66BFF;
+  --panel-bg: color-mix(in srgb, var(--color-night-black) 85%, transparent);
+  --panel-bg-elevated: color-mix(in srgb, var(--color-night-black) 94%, var(--color-shadow-purple) 6%);
+  --panel-border-color: var(--color-gold-light);
+  --panel-border-subtle: color-mix(in srgb, var(--color-gold-light) 35%, transparent);
+  --panel-inner-shadow: inset 0 0 24px color-mix(in srgb, var(--color-night-black) 90%, transparent), inset 0 1px 0 color-mix(in srgb, var(--color-bone-white) 18%, transparent);
+  --text-primary: var(--color-bone-white); --text-muted: color-mix(in srgb, var(--color-bone-white) 72%, var(--color-night-black) 28%); --text-accent: var(--color-gold-light);
+  --font-title: 'Cinzel', serif; --font-body: 'Inter', sans-serif;
+  --font-size-base: clamp(16px, 1vw, 22px); --font-size-sm: clamp(14px, 0.88vw, 18px); --font-size-lg: clamp(18px, 1.2vw, 26px); --font-size-xl: clamp(24px, 1.8vw, 40px); --font-size-hero: clamp(34px, 3vw, 64px);
+  --panel-blur: blur(8px); --panel-border-width: 1.5px; --panel-radius: 8px;
+  --transition-btn: 120ms ease-out; --transition-panel: 200ms ease-out; --transition-ghost-bar: 650ms cubic-bezier(0.22, 1, 0.36, 1);
+  --safe-area-x: clamp(24px, 3vw, 64px); --safe-area-y: clamp(20px, 2.5vh, 48px);
+}

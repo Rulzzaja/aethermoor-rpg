@@ -1,0 +1,280 @@
+{
+  "classes": [
+    {
+      "id": "knight",
+      "name": "Ksatria",
+      "epithet": "Penjaga Perisai",
+      "description": "Garda terdepan Aethermoor dengan zirah plat baja, pedang bercahaya, dan perisai kristal yang mampu membendung serangan terberat.",
+      "stats": {
+        "hp": 140,
+        "stamina": 100,
+        "mana": 30,
+        "atk": 14,
+        "def": 10,
+        "speed": 5.2
+      },
+      "basicAttack": {
+        "name": "Kombo Pedang Cahaya (3 Pukulan)",
+        "damageMultiplier": "100% / 100% / 140% ATK",
+        "range": "2 m",
+        "special": "Klik kanan untuk menahan serangan dengan Perisai."
+      },
+      "skills": [
+        {
+          "id": "shield_bash",
+          "name": "Hantaman Perisai",
+          "icon": "shield",
+          "damage": "120% ATK",
+          "manaCost": 0,
+          "cooldown": 8,
+          "description": "Menghantam musuh dengan perisai, memberikan 120% ATK dan efek Stun selama 1.5 detik."
+        },
+        {
+          "id": "whirlwind_slash",
+          "name": "Putaran Pedang",
+          "icon": "swordSpin",
+          "damage": "160% ATK",
+          "manaCost": 0,
+          "cooldown": 10,
+          "description": "Menebas memutar dalam radius 3 m di sekeliling Ksatria sebesar 160% ATK."
+        },
+        {
+          "id": "guardian_roar",
+          "name": "Teriakan Penjaga",
+          "icon": "roar",
+          "damage": "Buff +40% DEF",
+          "manaCost": 10,
+          "cooldown": 20,
+          "description": "Membangkitkan semangat cahaya, meningkatkan DEF sebesar +40% selama 8 detik."
+        }
+      ],
+      "defaultAccentIndex": 0
+    },
+    {
+      "id": "mage",
+      "name": "Penyihir",
+      "epithet": "Penenun Cahaya",
+      "description": "Pengendali energi kristal murni dari jarak jauh. Jubah berukir rune miliknya dikelilingi serpihan kristal yang melayang.",
+      "stats": {
+        "hp": 90,
+        "stamina": 80,
+        "mana": 120,
+        "atk": 18,
+        "def": 4,
+        "speed": 5
+      },
+      "basicAttack": {
+        "name": "Proyektil Sihir Kristal",
+        "damageMultiplier": "90% ATK (Charge 150%)",
+        "range": "18 m",
+        "special": "Tahan tombol serang untuk mengisi sihir hingga 150% damage."
+      },
+      "skills": [
+        {
+          "id": "fireball",
+          "name": "Bola Api",
+          "icon": "fireball",
+          "damage": "150% ATK",
+          "manaCost": 15,
+          "cooldown": 4,
+          "description": "Menembakkan bola api yang meledak dalam radius 2 m dan memberikan 150% ATK."
+        },
+        {
+          "id": "ice_wall",
+          "name": "Dinding Es",
+          "icon": "iceWall",
+          "damage": "Lambat 30%",
+          "manaCost": 25,
+          "cooldown": 14,
+          "description": "Menciptakan dinding es selama 6 detik yang menghalangi jalan dan memperlambat musuh 30%."
+        },
+        {
+          "id": "sky_lightning",
+          "name": "Petir Langit",
+          "icon": "lightning",
+          "damage": "220% ATK",
+          "manaCost": 40,
+          "cooldown": 18,
+          "description": "Memanggil sambaran petir di area radius 3.5 m dengan kehancuran 220% ATK."
+        }
+      ],
+      "defaultAccentIndex": 2
+    },
+    {
+      "id": "archer",
+      "name": "Pemanah",
+      "epithet": "Pengintai Hutan",
+      "description": "Penembak jitu berkecepatan tinggi dari Hutan Berkabut yang mahir menjaga jarak dan menjebak mangsanya.",
+      "stats": {
+        "hp": 100,
+        "stamina": 110,
+        "mana": 50,
+        "atk": 15,
+        "def": 6,
+        "speed": 5.8
+      },
+      "basicAttack": {
+        "name": "Panah Berukir Cahaya",
+        "damageMultiplier": "100% ATK (Tarik Penuh +50%)",
+        "range": "25 m",
+        "special": "Tahan untuk tarikan penuh (+50% damage)."
+      },
+      "skills": [
+        {
+          "id": "double_shot",
+          "name": "Tembakan Ganda",
+          "icon": "doubleArrow",
+          "damage": "2x 90% ATK",
+          "manaCost": 0,
+          "cooldown": 6,
+          "description": "Melepaskan 2 anak panah beruntun dengan cepat, masing-masing 90% ATK."
+        },
+        {
+          "id": "arrow_rain",
+          "name": "Hujan Panah",
+          "icon": "arrowRain",
+          "damage": "200% ATK",
+          "manaCost": 15,
+          "cooldown": 16,
+          "description": "Menghujani area radius 4 m selama 3 detik dengan total 200% ATK."
+        },
+        {
+          "id": "thorn_trap",
+          "name": "Jebakan Duri",
+          "icon": "trap",
+          "damage": "100% ATK + Ikat",
+          "manaCost": 10,
+          "cooldown": 12,
+          "description": "Memasang jebakan yang melukai 100% ATK dan mengikat musuh selama 2 detik."
+        }
+      ],
+      "defaultAccentIndex": 1
+    }
+  ],
+  "customization": {
+    "bodyTypes": [
+      {
+        "id": "tegap",
+        "label": "Tipe A (Tegap)"
+      },
+      {
+        "id": "ramping",
+        "label": "Tipe B (Ramping)"
+      }
+    ],
+    "faces": [
+      {
+        "id": 0,
+        "label": "Wajah 1 - Tegas"
+      },
+      {
+        "id": 1,
+        "label": "Wajah 2 - Tenang"
+      },
+      {
+        "id": 2,
+        "label": "Wajah 3 - Bangsawan"
+      },
+      {
+        "id": 3,
+        "label": "Wajah 4 - Veteran"
+      }
+    ],
+    "hairStyles": [
+      {
+        "id": 0,
+        "label": "Gaya 1 - Pendek Ksatria"
+      },
+      {
+        "id": 1,
+        "label": "Gaya 2 - Kepang Penjaga"
+      },
+      {
+        "id": 2,
+        "label": "Gaya 3 - Panjang Mengalir"
+      }
+    ],
+    "hairColors": [
+      {
+        "name": "Hitam Malam",
+        "hex": "#12141C"
+      },
+      {
+        "name": "Putih Perak",
+        "hex": "#EFE6D2"
+      },
+      {
+        "name": "Emas Surya",
+        "hex": "#F2C14E"
+      },
+      {
+        "name": "Merah Bara",
+        "hex": "#C9373F"
+      },
+      {
+        "name": "Biru Es",
+        "hex": "#5FB7E5"
+      },
+      {
+        "name": "Ungu Mistik",
+        "hex": "#B66BFF"
+      },
+      {
+        "name": "Hijau Lumut",
+        "hex": "#2F5D50"
+      },
+      {
+        "name": "Cokelat Perunggu",
+        "hex": "#8C6239"
+      }
+    ],
+    "accentColors": [
+      {
+        "name": "Biru Kristal",
+        "hex": "#5FB7E5"
+      },
+      {
+        "name": "Hijau Hutan",
+        "hex": "#2F5D50"
+      },
+      {
+        "name": "Ungu Bayangan",
+        "hex": "#4B2E6F"
+      },
+      {
+        "name": "Emas Cahaya",
+        "hex": "#F2C14E"
+      },
+      {
+        "name": "Merah Ksatria",
+        "hex": "#C9373F"
+      },
+      {
+        "name": "Putih Tulang",
+        "hex": "#EFE6D2"
+      },
+      {
+        "name": "Biru Langka",
+        "hex": "#4DA3FF"
+      },
+      {
+        "name": "Ungu Epik",
+        "hex": "#B66BFF"
+      }
+    ],
+    "faceMarkings": [
+      {
+        "id": "none",
+        "label": "Tanpa Hiasan"
+      },
+      {
+        "id": "scar",
+        "label": "Bekas Luka"
+      },
+      {
+        "id": "tattoo",
+        "label": "Cat Wajah Kristal"
+      }
+    ]
+  }
+}
